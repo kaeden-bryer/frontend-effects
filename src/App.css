@@ -1,5 +1,10 @@
 :root {
-  background-color: black;
+  background-color: gainsboro;
+}
+
+.main {
+  margin-top: 50vh;
+  margin-bottom: 100vh;
 }
 
 .container {
@@ -8,8 +13,6 @@
   background-color: bisque;
   position: relative;
   .sticky {
-    margin-top: 50vh;
-    margin-bottom: 100vh;
     position: sticky;
     overflow: hidden;
     top: 0;

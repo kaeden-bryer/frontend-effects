@@ -29,19 +29,19 @@ function App() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 4])
 
   return (
-    <>
+    <div className="main">
       <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}/>
       <div ref={container} className="container">
         <div className="sticky">
+          <h1>Sticky Header</h1>
           <motion.div style={{scale}} className="el">
             <div className="image-container">
               <img src="me.jpg" alt="image" />
             </div>
           </motion.div>
-          <h1>Sticky Header</h1>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
